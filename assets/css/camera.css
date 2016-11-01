@@ -1,0 +1,228 @@
+#camera .camera{
+  position: relative;
+  height: 450px;
+  width: 400px;
+  margin-bottom: 50px;
+  display: inline-block;
+  background: rgba(69, 71, 72, 0.5);
+  border-radius: 20px;
+}
+#camera p{
+  font-family: sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+  position: relative;
+  top: -10px;
+  left: -121px;
+  color: white;
+}
+#camera .corpo{
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	background: #B8E4F2;
+	top: 60px;
+	left: 50%;
+	margin-left: -150px;
+}
+#camera .corpo::before{
+	position: absolute;
+	height: 2px;
+	width: 300px;
+	background: #17C4EB;
+	top: 20px;
+	left: 50%;
+	margin-left: -150px;
+	content: ""; 
+}
+
+#camera .visor{
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	background: #5D6169;
+	border-radius: 3px;
+	top: 95px;
+	left: 286px;
+	overflow: hidden;
+}
+
+#camera .visor::before{
+	position: absolute;
+	height: 18px;
+	width: 18px;
+	background: white;
+	opacity: 0.6;
+	border-radius: 6px;
+	top: 6px;
+	left: 6px;
+	content: "";
+}
+#camera .visor::after{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	background: #45484F;
+	opacity: 0.2;
+	top: -83%;
+	left: 10px;
+	content: "";
+	transform: rotate(45deg);
+}
+#camera .base{
+	position: absolute;
+	height: 70px;
+	width: 310px;
+	background: #5D6169;
+	top: 260px;
+	left: 50%;
+	margin-left: -155px;
+}
+
+#camera .base::before{
+	position: absolute;
+	height: 10px;
+	width: 220px;
+	background: #717680;
+	top: 20px;
+	left: 50%;
+	margin-left: -110px;
+	content: "";
+}
+
+#camera .lente{
+	position: absolute;
+	height: 110px;
+	width: 110px;
+	border-radius: 50%;
+	background: #5D6169;
+	top: 110px;
+	left: 50%;
+	margin-left: -55px;
+}
+
+#camera .lente::before{
+	position: absolute;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	background: #3C424D;
+	top: 10px;
+	left: 50%;
+	margin-left: -45px;
+	content: "";
+}
+
+#camera .lente::after{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background: white;
+	opacity: 0.4;
+	top: 20px;
+	left: 50%;
+	margin-left: -35px;
+	content: "";
+}
+
+#camera .bt{
+	position: relative;
+	height: 20px;
+	width: 40px;
+	background: #5D6169;
+	top: 40px;
+	left: 60px;
+  cursor: pointer;
+}
+
+@keyframes click {
+	2% {transform: translateY(12px);}
+	10% {transform: translateY(0);}
+}
+
+#camera .bt2 {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	background: white;
+	border-radius: 50%;
+	top: 208px;
+	left: 85px;
+}
+
+#camera .bt2::before {
+	position: absolute;
+	height: 24px;
+	width: 24px;
+	background: #E34530;
+	border-radius: 50%;
+	top: 3px;
+	left: 3px;
+	content: "";
+}
+
+#camera .foto{
+	position: absolute;
+	height: 2px;
+	width: 180px;
+	background: white;
+	top: 284px;
+	left: 110px;
+}
+
+#camera .foto.f1::before{
+	background:url(https://scontent.fnat1-1.fna.fbcdn.net/v/t1.0-9/14595765_1409575429067638_4604108013577792798_n.jpg?oh=386754e48457af38931359eabf19c3d6&oe=58D0EE8D);
+	background-size: 100%;
+	background-position: 50%;
+}
+#camera .foto.f2::before{
+	background:url(https://scontent.fnat1-1.fna.fbcdn.net/v/t1.0-9/218167_345121452238382_1121131067_n.jpg?oh=a26a5a4bc95232e274890f22d68e2e61&oe=588DAA91);
+  background-size: 102%;
+  background-position: 0%;
+}
+#camera .foto.f3::before{
+	background:url(https://scontent.fnat1-1.fna.fbcdn.net/t31.0-8/12748088_930036560413532_6172808607076171420_o.jpg);
+  background-size: 136%;
+  background-position: 91%;%;
+}
+#camera .foto.f4::before{
+	background:url(https://scontent.fnat1-1.fna.fbcdn.net/v/t1.0-9/12072564_960271304056724_8953513620158862225_n.jpg?oh=5527708bdd028f9d853c5813d3a6f286&oe=58A5B58A);
+  background-size: 135%;
+  background-position: 50%;
+}
+#camera .foto.f5::before{
+	background:url(https://scontent.fnat1-1.fna.fbcdn.net/t31.0-8/12238278_880751418675380_7332662541870805194_o.jpg);
+	background-size: 140%;
+	background-position: 50%;
+}
+#camera .foto::before{
+	position: absolute;
+	height: 130px;
+	width: 170px;
+	top: 4px;
+	left: 5px;
+	opacity: 0;
+	content: "";
+}
+#camera .foto.foto-click{
+  animation: photo 8s forwards;
+}
+#camera .foto.foto-click::before{
+ animation: revelar 8s forwards; 
+}
+#camera .bt.foto-click{
+  animation: click 8s forwards;  
+}
+
+@keyframes photo{
+	0% {height: 2px;}
+	12% {height: 2px;}
+	35% {height: 150px}
+	100% {height: 150px;}
+}
+@keyframes revelar{
+	0% {opacity: 0;}
+	35% {opacity: 0;}
+	100% {opacity: 1}
+}

@@ -1,0 +1,28 @@
+* {
+  padding: 0; margin: 0;
+}
+@font-face {
+    font-family: proxima;
+    src: url(../font/proximanovasoft-regular-woff.woff);
+}
+body, html {
+  background: url(../img/bg.png) no-repeat center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:auto 100%;
+  font-family:proxima,Arial,Helvetica,sans-serif;
+}
+strong p {
+  color: chocolate;
+}
+#stork {
+  display: inline-block;
+  width: 100px;
+}
+#teemo {
+  position: fixed;
+  bottom: 0;
+  right: -20px;
+  width: 150px;
+}

@@ -1,0 +1,50 @@
+/*ul#example {
+	color: #c2cb8b;
+	list-style: none;
+	padding: 0;
+	display: block;
+	text-align: center;
+}
+ul#example li {
+	display: inline-block;
+}
+ul#example li span {
+	font-size: 5vw;
+	font-weight: 300;
+	line-height: 11vw;
+}
+ul#example li.seperator {
+	font-size: 4vw;
+	line-height: 10vw;
+	vertical-align: top;
+}
+ul#example li p {
+	color: #a7abb1;
+	font-size: 1.6vw;
+	margin-top: -3vw;
+}*/
+ul#example {
+	color: #c2cb8b;
+	list-style: none;
+	/*margin: 50px 0;*/
+	padding: 0;
+	display: block;
+	text-align: center;
+}
+ul#example li {
+	display: inline-block;
+}
+ul#example li span {
+	font-size: 80px;
+	font-weight: 300;
+	line-height: 80px;
+}
+ul#example li.seperator {
+	font-size: 80px;
+	line-height: 70px;
+	vertical-align: top;
+}
+ul#example li p {
+	color: #666;
+	font-size: 22px;
+}
